@@ -52,14 +52,14 @@ header {
     }
 }
 @media  screen and (max-width:767px) {
-    .nav li a{
+    .nav ul>li a{
         font-size: 12px;
         padding-left: 0;
     }
-    .news li:nth-child(1) {
+    .news ul>li:nth-child(1) {
         width: 100%!important;
     }
-    .news li {
+    .news ul>li {
         width: 50%!important;
     }
     .row h3 {
@@ -80,17 +80,22 @@ header {
     vertical-align: middle;
     margin-right: 5px;
 }
-.news ul li {
+.news ul>li {
     width: 25%;
     float: left;
     height: 128px;
     margin-bottom: 10px;
 }
-.news ul li:nth-child(1) {
+.news .carousel img{
+    height: 266px!important;
+    width: 100%!important;
+}
+.news ul>li:nth-child(1) {
     width: 50%;
     height: 266px;
+    padding-right: 10px;
 }
-.news ul li a {
+.news ul li>a {
     height: 100%;
     position: relative;
     width: 100%;
